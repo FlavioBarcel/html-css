@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+
+:root{
+    --cor00: #c5ebd6;
+    --cor01: #83E1AD;
+    --cor02: #3DDC84;
+    --cor03: #2FA866;
+    --cor04: #1A5C37;
+    --cor05: #063d1e;
+
+    --fonte_normal: arial, helvetica, sans-serif; 
+    --fonte_destaque: 'Bebas Neue', cursive;
+    --fonte_Android: 'Android',cursive;
+}
+
+body{
+    margin: 0px;
+    font-family: var(--fonte_normal);
+    background-color: var(--cor00);
+    
+}
+
+body header{
+    background-image: linear-gradient(to top , var(--cor05), var(--cor03));
+    height: 188px;
+}
+
+body header h1{
+    font-family: var(--fonte_destaque);
+    text-align: center;
+    font-size: 3.0em;
+    color: white;
+    font-weight: normal;
+    text-shadow: 2px 2px 2px var(--cor05);
+    margin: 0px;
+    padding-top: 30px;
+}
+
+body header p{
+    font-family: var(--fonte_normal);
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    margin-bottom: 0px;
+}
+
+nav {
+    background-color: #063d1e;
+    padding: 10px;
+}
+
+nav a{
+    color: var(--cor02);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color: #2FA866;
+    border-radius: 2px;
+    color: var(--cor05);
+}
+
+main article{
+    background-color: white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 23px;
+    padding-top: 1px;        
+}
+main article h1{
+    font-family: var(--fonte_Android);
+    color: #063d1e;
+    font-size: 1.8em;
+}
+main article h2{
+    font-family: var(--fonte_Android);
+    font-weight: normal;
+    color: var(--cor04);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+}
+
+main p{
+    text-indent: 30px;
+    line-height: 2em;
+    text-align: justify;
+}
+main article strong{
+    color: var(--cor04);
+    background-color: var(--cor02);
+}
+
+main article aside{
+    background-color: var(--cor02);
+    border-radius: 10px;
+    padding: 10px;
+}
+main article aside ul{
+    columns: 2;
+    list-style-position: inside; /*bolinhas pro lado de dentro*/
+}
+
+picture img{
+    width: 100%;
+}

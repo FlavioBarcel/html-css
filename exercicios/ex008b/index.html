@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--uso a tag CODE para ajeitar a fonte quando for codigo-->
+    <code>
+           num = int(imput('Digite um numero'))
+           if num % 2 == 0:
+              print(f'O numeto {num} é PAR')
+           else
+              print(f'O numero {num} é IMPAR')
+           print ('Fim do programa')      
+    </code>
+    <!--O exemplo acima , utilizamos um exemplo de codigo pyton, na pagina da internet, ele ta corrido as linhas de codigo, sem identação.-->
+    <pre>
+        <code>
+    num = int(imput('Digite um numero'))
+    if num % 2 == 0:
+        print(f'O numeto {num} é PAR')
+    else
+        print(f'O numero {num} é IMPAR')
+    print ('Fim do programa')
+        </code>
+    </pre>
+    <!--Agora usamos a tag <pre> e ele manteve a identação na pagina.-->
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo:<q>o computador é um burro muito rapido</q></p> <!--usando a tag <q> ele vai abrir aspas que da mais sentido a frase quando é uma citação--> 
+        <h2>Citações completas</h2>
+        <p>Segundo Mauricio Samy Silla no livro de HTML para leigos</p>
+        <blockquote cite="https://www.google.com.br/books/edition/HTML5_2%C2%AA_Edi%C3%A7%C3%A3o/f7JVBQAAQBAJ?hl=pt-BR&gbpv=1&dq=html5&printsec=frontcover">
+            Em setembro de 1991, foi criada a lista de discussao eletronica
+            denominada WWW talk com o proposito de trocar ideias e experiencias
+            sobre a HTML
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou gostando</p> <!--use a tag  <abbr> para usar abreviações-->
+        <h2>Texto Invertido</h2>
+        <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+        <!--use a tag  <bdo> para fazer texto invertido-->
+
+</body>
+</html>
