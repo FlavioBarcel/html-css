@@ -26,10 +26,10 @@ header{
     text-align: center;
 }
 header > h1{
-    font-family: var(--fonte2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-top: 50px;
     font-variant: small-caps; /* deixa as primeiras letras maiusculas*/
-    font-size: 5vw;
+    font-size: 7vw;
 }
 header p{
     padding-bottom: 50px;
@@ -63,10 +63,26 @@ section.normal{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.568);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.497);
+    background-attachment: fixed;
 }
 section.imagem p{
     display: inline-block;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.315);
     padding-left: 15px;
+    
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section p{
+    padding-bottom: 2em;
 }
