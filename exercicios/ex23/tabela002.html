@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*comando para deixar o cabeçalho fixo*/
         }
         td, th{
             border: 1px solid black;
@@ -20,6 +21,12 @@
         thead, tfoot{
             background-color: black;
             color: white;
+        }
+        thead tr th{/*comando para deixar o cabeçalho fixo*/
+            position: sticky;
+            top: -1px;
+            background-color: black;
+
         }
         .num{
             text-align: right;
@@ -30,6 +37,9 @@
             font-size: 20px;
             font-weight: bold;
 
+        }
+        tbody tr:nth-child(2n){ /*efeito zebrado - posso usar tambem old (impar) e even(par)*/
+            background-color: antiquewhite;
         }
     </style>
 </head>
@@ -51,7 +61,7 @@
             <thead>
                 <tr>
                     <th scope="col">Estado</th>
-                    <th scope="col">Poulação</th>
+                    <th style="width: 100px;" scope="col">População</th>
                 </tr>
             </thead>
             <tbody>
