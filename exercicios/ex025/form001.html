@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Formularios</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            border: 2px solid black;
+            width: 350px;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>   <!--Method tem 2 tipo : post e get , o get aparece em cima do navegador e o post nao aparece, mas da ra ve se inspecionar ele-->
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"> </p>
+        <p><label for="iendereco">Endereço:</label> <input type="text" name="endereco" id="iendereco"> </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
